@@ -485,6 +485,7 @@ plt.xticks(range(1, len(history2.history['loss']) + 1))
 plt.legend()
 plt.show()
 
+# MAE Plotting
 metric_name = 'mean_absolute_error'
 metric_index = feedback_model.metrics_names.index(metric_name)
 
