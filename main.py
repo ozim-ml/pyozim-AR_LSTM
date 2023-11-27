@@ -420,7 +420,6 @@ IPython.display.clear_output()
 
 multi_val_performance['AR LSTM'] = feedback_model.evaluate(multi_window.val)
 multi_performance['AR LSTM'] = feedback_model.evaluate(multi_window.test, verbose=0)
-plt.suptitle('AR LSTM', y=0.92, fontsize=16)
 multi_window.plot(feedback_model)
 plt.show()
 
@@ -461,7 +460,6 @@ history2 = compile_and_fit(feedback_model2, multi_window)
 # Evaluate the performance on the validation set, plot predictions of AR LSTM 2
 multi_val_performance['AR LSTM 2'] = feedback_model2.evaluate(multi_window.val)
 multi_performance['AR LSTM 2'] = feedback_model2.evaluate(multi_window.test, verbose=0)
-plt.suptitle('AR LSTM 2', y=0.92, fontsize=16)
 multi_window.plot(feedback_model2)
 plt.show()
 
