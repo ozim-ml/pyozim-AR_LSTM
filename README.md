@@ -1,3 +1,3 @@
 # Autoregressive Recurrent Neural Network
-This repository contains a code which is a little extension of the one from the official Tensorflow tutorial https://www.tensorflow.org/tutorials/structured_data/time_series#advanced_autoregressive_model.
+This repository contains a code which is a little extension of the code from the official Tensorflow tutorial https://www.tensorflow.org/tutorials/structured_data/time_series#advanced_autoregressive_model.
 Second AR LSTM model with smaller number of units was added for comparison. Differences between performance of the models were visualized by line plots of training and validation loss and bar plots of MAE of validation and test datasets. 
