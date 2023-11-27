@@ -497,7 +497,7 @@ ar_lstm_test_mae = multi_performance['AR LSTM'][metric_index]
 ar_lstm_2_val_mae = multi_val_performance['AR LSTM 2'][metric_index]
 ar_lstm_2_test_mae = multi_performance['AR LSTM 2'][metric_index]
 
-# Plotting
+# Plotting Validation and Test MAE
 x = np.arange(2)
 width = 0.3
 
@@ -523,5 +523,9 @@ for bar, val in zip(bar_test, [ar_lstm_test_mae, ar_lstm_2_test_mae]):
     ax.text(bar.get_x() + bar.get_width() / 2, height, f'{val:.2f}',
             ha='center', va='bottom', color='black', fontsize=10)
 
+ax.set_title('MAE of Validation and Test datasets')
 ax.legend()
 plt.show()
+
+for name, value in multi_performance.items():
+  print(f'{name:8s}: {value[1]:0.4f}')
